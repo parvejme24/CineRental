@@ -1,8 +1,11 @@
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 export default function App() {
   return (
     <>
-      <h2>Hello</h2>
-    </>
+      <Header />
+      <Sidebar />
+    </ >
   );
 }

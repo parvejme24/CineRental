@@ -1,3 +1,4 @@
+import Rating from "./Rating";
 
 export default function MovieCard({ movie, getImageUrl }) {
     const { cover, title, descriptio, gener, rating, price } = movie
@@ -9,11 +10,7 @@ export default function MovieCard({ movie, getImageUrl }) {
                     <h3 class="text-xl mb-1">{title}</h3>
                     <p class="text-[#575A6E] text-sm mb-2">{descriptio}</p>
                     <div class="flex items-center space-x-1 mb-5">
-                        <img src="./assets/star.svg" width="14" height="14" alt="" />
-                        <img src="./assets/star.svg" width="14" height="14" alt="" />
-                        <img src="./assets/star.svg" width="14" height="14" alt="" />
-                        <img src="./assets/star.svg" width="14" height="14" alt="" />
-                        <img src="./assets/star.svg" width="14" height="14" alt="" />
+                        <Rating value={rating} />
                     </div>
                     <a class="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
                         href="#">

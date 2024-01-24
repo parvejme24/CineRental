@@ -1,9 +1,10 @@
-export default function MovieCard({ movie }) {
+
+export default function MovieCard({ movie, getImageUrl }) {
     const { cover, title, descriptio, gener, rating, price } = movie
     return (
         <>
             <figure class="p-4 border border-black/10 shadow-sm dark:border-white/10 rounded-xl">
-                <img class="w-full object-cover" src="./assets/movie-1.png" alt="" />
+                <img class="w-full object-cover" src={getImageUrl(cover)} alt="" />
                 <figcaption class="pt-4">
                     <h3 class="text-xl mb-1">{title}</h3>
                     <p class="text-[#575A6E] text-sm mb-2">{descriptio}</p>

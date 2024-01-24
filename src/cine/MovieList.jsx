@@ -1,4 +1,5 @@
 import { getAllMovies } from "../data/movies";
+import { getImageUrl } from "../utils/cine-util";
 import MovieCard from "./MovieCard";
 
 
@@ -7,7 +8,7 @@ export default function MovieList() {
     return (
         <div className="content">
             <div className="grid sm:grid-cols-2 xl:grid-cols-2">
-                {movies.map(movie => <MovieCard movie={movie} />)}
+                {movies.map(movie => <MovieCard movie={movie} getImageUrl={getImageUrl} />)}
             </div>
         </div>
     );

@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import MovieList from "./cine/MovieList";
@@ -14,6 +15,7 @@ export default function App() {
         </div>
       </main>
 
+      <Footer />
     </ >
   );
 }
